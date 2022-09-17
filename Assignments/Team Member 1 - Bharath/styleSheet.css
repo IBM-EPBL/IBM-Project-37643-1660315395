@@ -1,0 +1,13 @@
+.regform{
+    margin-left: auto;
+    margin-right: auto;
+    width: "50%";
+    border-spacing: 3px;
+    background-color: pink;
+    border: 1px solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+td{
+    padding: "10px";
+    border: 1px solid;
+}
