@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <table class="regform">
+            <tr>	
+                <th colspan="2">User Registration Form</th>
+            </tr>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input id="name" type="text" name="name" placeholder="Enter name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input id="email" type="email" name="email" placeholder="Enter email" required></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td><input id="mobile" type="Number" name="mobile" placeholder="Enter phone number" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</td>
+                <td>
+                <input id = "gender" type="radio" name="gender" value="male">Male<br>
+                <input id = "gender" type="radio" name="gender" value="female">Female<br>
+                <input id = "gender" type="radio" name="gender" value="other">Others<br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td>		
+                    <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>		
+                <select name="country" id="country">
+                    <option value="" selected disabled hidden>Choose country</option>
+                    <option value="india">India</option>
+                    <option value="unitedstates">United States</option>
+                    <option value="newzealand">New Zealand</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="australia">Australia</option>
+                </select>    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td><input id="state" type="text" name="state" placeholder="Enter state" required></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input id="city" type="text" name="city" placeholder="Enter city" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input id="password" type="password" name="password" placeholder="Enter password" required></td>
+            </tr>
+            <tr>
+                <td><label for="con_password">Confirm Password</label></td>
+                <td><input id="con_password" type="password" name="con_password" placeholder="Confirm password" required></td>
+            </tr>
+            <tr rowspan="2">
+                <td colspan="2"><input id="button" type="submit" value="Submit" name="submit">
+                <input id="button" type="reset" value="Reset" name="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

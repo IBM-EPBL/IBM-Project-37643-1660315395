@@ -1,0 +1,12 @@
+.regform{
+    margin-left: auto;
+    margin-right: auto;
+    width: "50%";
+    border-spacing: 2px;
+    background-color: cyan;
+    border: 1px solid;
+}
+td{
+    padding: "5px";
+    border: 1px solid;
+}
