@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/69/69881.png" type = "image/x-icon">
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/69/69881.png" type = "image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Register</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    
+    
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<meta name="theme-color" content="#712cf9">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{url_for('static', filename='/stylesheets/signin.css')}}">
+  </head>
+  <body class="text-center">
+    <br><br>
+<main class="form-signin w-25 m-auto">
+<!-- <form method="post" action="/login">-->
+  <form method="post">
+    <h1 class="h3 mb-3 fw-normal">REGISTER</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="name">
+      <label for="floatingInput">Name</label>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="number" min ="1" class="form-control" id="floatingInput" placeholder="Name" name="roll">
+      <label for="floatingInput">Rollno</label>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <br>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button><br><br>
+  </form>
+</main>
+    
+  </body>
+</html>
