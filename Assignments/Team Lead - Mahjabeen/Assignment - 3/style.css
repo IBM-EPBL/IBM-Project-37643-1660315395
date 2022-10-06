@@ -1,0 +1,7 @@
+img{
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;   /* Horizontal Space */
+    margin-bottom: 30px;  /* Vertical Space */
+    border: 2px solid red;
+ }
