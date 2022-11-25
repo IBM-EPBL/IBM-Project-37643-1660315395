@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <style>
+      body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 48px;
+      }
+    </style>
+
+  <link rel="stylesheet" href="..\static\css\home.css">
+  <title>Personal Expense Tracker</title>
+  <link rel="shortcut icon" href="/static/images/title-icon.png" type="image/x-icon">
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6392c642-e4e6-44a8-829a-f350772a0c1a", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "dfebf790-1310-4e12-9378-609d293f199f", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+       
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <center>
+            <ul>
+              <li><a href="#hero" data-after="HOME" style="color: black;">HOME</a></li>
+              <li><a href="#services" data-after="SERVICES" style="color: black;">SERVICES</a></li>
+              <li><a href="#contact" data-after="CONTACT" style="color: black;">CONTACT</a></li>
+              <li><a href="/signin" data-after="LOGIN" style="color: black;">LOGIN</a></li>
+            </ul>
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div class="h1-block" style="transform: translateX(-250px);">
+          <br>
+          <h1>PERSONAL EXPENSE TRACKER<span></span></h1>
+          <br>
+          <h5>Don't have an account?</h5>
+          <a href="/signup" type="button" class="cta">Sign-up</a> 
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Services provided</h1>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <h2>Visualization</h2>
+          <p>Expenses are visualized into bar graphs and pie-charts to create more insight into your spending habits.</p>
+        </div>
+        <div class="service-item">
+          
+          <h2>Email Alerts</h2>
+          <p>Email Alerts are sent to the respective users' email when they exceed their budget limit. Budget limits can be modified to the users' need.</p>
+        </div>
+        <div class="service-item">
+          <h2>Download Reports</h2>
+          <p>Reports can be generated for each user either weekly or monthly. Generated Reports can be either downloaded manually or sent through email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+ 
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title" style="text-shadow: 1px 1px #000000;">Contact info</h1>
+        <br>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>2019103542@smartinternz.com</h2>
+            <h2>2019103584@smartinternz.com</h2>
+            <h2>2019103609@smartinternz.com</h2>
+            <h2>2019103011@smartinternz.com</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+  <script src="..\static\js\home.js"></script>
+</body>
+
+</html>
