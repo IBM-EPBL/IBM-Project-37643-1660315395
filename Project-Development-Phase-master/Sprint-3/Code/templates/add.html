@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+
+<div class="container-add">
+<h1 class="addExpheading">ENTER <br> YOUR <br> EXPENSES <br> HERE!</h1>   
+    <div class="row" style="transform: translateX(20%);">
+        <div class="col-md-6 expense-row">
+            <form name = "add" action="/addexpense" method="POST" onsubmit="required()">
+                
+                <div class="form-group">
+                     <label for="">Date</label> 
+                     <input class="form-control" type="datetime-local" name="date" step="1" ></div>
+                <div class="form-group"> <label for="">Expense name</label> 
+                    <input class="form-control" type="text" name="expensename" id="expensename">
+                </div>
+                <div class="form-group">
+                     <label for="">Expense Amount</label> 
+                      <input class="form-control"  type="number" min="0" name="amount" id="amount">
+                </div>
+
+                <div class="form-group">
+                    <label for=""></label> 
+                    <select class="form-control" name="paymode" id="paymode">
+                        <option  selected hidden>Pay-Mode</option>
+                        <option name="cash" value="cash">Cash</option>
+                        <option name="onlinebanking" value="onlinebanking">Online Banking</option>
+                        <option name="creditcard" value="creditcard">Credit card</option>
+                        <option name="debitcard" value="debitcard">Debit card</option>
+                        <option name="epayment" value="epayment">Epayment</option>
+                    
+                    </select>
+                
+                <div class="form-group">
+                    <label for=""></label>
+                    <select class="form-control" name="category" id="category">
+
+                         <option selected hidden>Category</option>
+                        <option name = "entertainment" value="entertainment">Entertainment</option>
+                        <option   name = "food" value="food">Food</option>
+                        <option name ="rent" value="rent">Rent</option>
+                        <option name = "business" value="business">Business</option>
+                        <option name = "EMI" value="EMI">EMI</option>
+                        <option name = "other" value="other">Other</option>
+            
+                    </select>
+                    <br>
+                    <input class="btn" type="submit" value="Add Expense">
+                </div>            
+            </form>
+        </div>
+    </div>
+    
+</div>
+   
+    {% endblock %}

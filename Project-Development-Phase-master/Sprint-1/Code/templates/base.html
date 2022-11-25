@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="..\static\css\base.css"">
+   <script src="/static/js/add.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="/static/images/title-icon.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar sticky-top  navbar-expand-xl navbar-dark navbar-custom">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ul-custom"> 
+        <li class="nav-item li-cust">
+          <a class="nav-link custom-a" href="/display">History</a>
+        </li>
+        <li class="nav-item li-cust">
+          <a class="nav-link custom-a" href="/add">Add Expense</a>
+        </li>
+        <li class="nav-item li-cust">
+          <a class="nav-link custom-a" href="/limit">Budget</a>
+        </li>
+        <li class="nav-item dropdown li-cust">
+          <a class="nav-link dropdown-toggle custom-a" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/today">Today</a>
+            <a class="dropdown-item" href="/month">Monthly</a>
+            
+            <a class="dropdown-item" href="/year">Yearly</a>
+          </div>
+        </li>
+      </ul>
+        <div class="form-inline my-5 my-lg-1" style="position: absolute; left: 1250px;">
+      <ul class="navbar-nav mr-auto "  >  <li class="nav-item dropdown btn-group open">
+        <a class="btn btn-dark" href="#"><i class="fa fa-user fa-fw"></i>User </a>
+  <a class="btn btn-dark dropdown-toggle "href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   
+  </a> 
+          
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" style="color: darkred;" href="/logout">Log-Out <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+          </div>
+        </li>
+       </ul>
+      </div>
+    
+    </div>
+  </nav>
+    {% block body %} 
+    {% endblock %}
+</body>
+</html>
