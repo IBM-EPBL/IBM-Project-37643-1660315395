@@ -3,10 +3,10 @@
 Personal Expense Tracker Application
 
 # Team Members
-Mahjabeen A
-Pooja S
-Shashi D
-Bharath M
+1. Mahjabeen A
+2. Pooja S
+3. Shashi D
+4. Bharath M
 
 # Project Description
 Personal expense tracker is an application which helps people in managing their expenses efficiently. It helps you track all the transactions on a periodic basis which can be daily, monthly or even annually. Users can add their expenses and visualize it. Moreover, users can set limit for the amount to be used for that particular month. If the limit is exceeded, the user will be alerted through an email.
